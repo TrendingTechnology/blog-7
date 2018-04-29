@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/bin/node /usr/local/bin/yarnpkg
+  /usr/bin/node /usr/local/bin/yarn deploy
 
 PATH: 
-  /home/bondiano/Documents/workspace/blog/node_modules/.bin:/home/bondiano/Documents/workspace/node_modules/.bin:/home/bondiano/Documents/node_modules/.bin:/home/bondiano/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/bin:/home/bondiano/bin:/home/bondiano/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  /home/bondiano/bin:/home/bondiano/.local/bin:/home/bondiano/bin:/home/bondiano/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 Yarn version: 
   1.5.1
@@ -79,29 +79,13 @@ Lockfile:
   No lockfile
 
 Trace: 
-  Error: /home/bondiano/Documents/workspace/blog/node_modules/sharp: Command failed.
+  Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c (node install/libvips && node install/dll-copy && prebuild-install) || (node-gyp rebuild && node install/dll-copy)
-  Directory: /home/bondiano/Documents/workspace/blog/node_modules/sharp
+  Arguments: -c gatsby build --prefix-paths && gh-pages -d public
+  Directory: /home/bondiano/Documents/workspace/blog
   Output:
-  info sharp Downloading https://github.com/lovell/sharp-libvips/releases/download/v8.6.1/libvips-8.6.1-linux-x64.tar.gz
-  /home/bondiano/Documents/workspace/blog/node_modules/sharp/install/libvips.js:52
-          throw err;
-          ^
   
-  Error: connect ETIMEDOUT 52.216.225.32:443
-      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1174:14)
-  internal/modules/cjs/loader.js:550
-      throw err;
-      ^
-  
-  Error: Cannot find module '/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js'
-      at Function.Module._resolveFilename (internal/modules/cjs/loader.js:548:15)
-      at Function.Module._load (internal/modules/cjs/loader.js:475:25)
-      at Function.Module.runMain (internal/modules/cjs/loader.js:695:10)
-      at startup (internal/bootstrap/node.js:201:19)
-      at bootstrapNodeJSCore (internal/bootstrap/node.js:516:3)
       at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
       at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
       at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30281:17)
