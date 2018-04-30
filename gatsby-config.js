@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Василий Кузенокв',
+    title: 'Василий Кузенков',
     author: 'Vassiliy Kuzenkov',
     description: 'My little blog for easy reading.',
     siteUrl: 'https://blog.bondiano.xyz',
@@ -23,7 +23,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 595,
             },
           },
           {
@@ -44,6 +44,18 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-react-next`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Bondiano Blog",
+        short_name: "Blog",
+        start_url: "/",
+        background_color: "#fffff",
+        theme_color: "#fffffff",
+        display: "minimal-ui",
+        icon: "/icon.png", // This path is relative to the root of the site.
+      },
+    },
     {
       resolve: 'gatsby-plugin-typography',
       options: {

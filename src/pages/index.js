@@ -1,41 +1,39 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React, {Component, Fragment} from 'react'
 import Helmet from 'react-helmet'
 
 import '../asserts/fonts/fira-sans-condensed/firasanscondensed.css';
 import '../asserts/fonts/roboto-slab/robotoslab.css';
 
+import Header from '../components/Header'
 import Bio from '../components/Bio'
-import { rhythm } from '../utils/typography'
+import PostPreview from '../components/PostPreview'
 
-class BlogIndex extends React.Component {
+class BlogIndex extends Component {
   render() {
+    const { location, children } = this.props
     const {title: siteTitle} = this.props.data.site.siteMetadata
     const {edges: posts} = this.props.data.allMarkdownRemark
-
+  
     return (
-      <div>
+      <Fragment>
         <Helmet title={siteTitle} />
+
+        <Header />
         <Bio />
+        
         {posts.map(({ node }) => {
-          const {title} = node.frontmatter || node.fields.slug
+          const {title} = node.frontmatter
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            <PostPreview 
+              slug={node.fields.slug}
+              title={title}
+              excerpt={node.excerpt}
+              tags={node.frontmatter.tags}
+              date={node.frontmatter.date}
+            />
           )
         })}
-      </div>
+      </Fragment>
     )
   }
 }
@@ -59,6 +57,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            tags
           }
         }
       }

@@ -2,7 +2,7 @@ import Typography from 'typography'
 
 const theme = {
   baseFontSize: '18px',
-  baseLineHeight: 1.666,
+  baseLineHeight: 1.6,
   headerFontFamily: ['Roboto Slab', 'sans-serif'],
   bodyFontFamily: ['Fira Sans Condensed', 'serif'],
 }
