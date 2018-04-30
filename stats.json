@@ -1,12 +1,20 @@
 {
   "assetsByChunkName": {
-    "path---my-second-post": [
-      "path---my-second-post-96722bd282ba198436c8.js",
-      "path---my-second-post-96722bd282ba198436c8.js.map"
+    "path---tags-hello-world": [
+      "path---tags-hello-world-4fa21298906f56a0cead.js",
+      "path---tags-hello-world-4fa21298906f56a0cead.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-f355d2aae2893701430f.js",
-      "component---src-pages-index-js-f355d2aae2893701430f.js.map"
+      "component---src-pages-index-js-3fdd1783917b7470b10d.js",
+      "component---src-pages-index-js-3fdd1783917b7470b10d.js.map"
+    ],
+    "component---src-templates-tags-js": [
+      "component---src-templates-tags-js-7f1901de1188f3dd6545.js",
+      "component---src-templates-tags-js-7f1901de1188f3dd6545.js.map"
+    ],
+    "path---tags": [
+      "path---tags-416355a471ada9269518.js",
+      "path---tags-416355a471ada9269518.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -16,49 +24,49 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
+    "path---01-05-2018-hello-world": [
+      "path---01-05-2018-hello-world-8821f7dff786e2f444cc.js",
+      "path---01-05-2018-hello-world-8821f7dff786e2f444cc.js.map"
+    ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-38fb534b4af13a29e143.js",
-      "component---src-templates-blog-post-js-38fb534b4af13a29e143.js.map"
+      "component---src-templates-blog-post-js-575bf7469d2a8ffdb2cf.js",
+      "component---src-templates-blog-post-js-575bf7469d2a8ffdb2cf.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-695259bec9cdfefb1571.js",
-      "component---src-layouts-index-js-695259bec9cdfefb1571.js.map"
+      "component---src-layouts-index-js-3a53d55d945b19d60254.js",
+      "component---src-layouts-index-js-3a53d55d945b19d60254.js.map"
     ],
-    "path---hi-folks": [
-      "path---hi-folks-f7d47ad9cd274dc56550.js",
-      "path---hi-folks-f7d47ad9cd274dc56550.js.map"
+    "path---tags-будни": [
+      "path---tags-будни-6a36fe770f4004d508ee.js",
+      "path---tags-будни-6a36fe770f4004d508ee.js.map"
     ],
     "path---index": [
-      "path---index-52f7246828ac32c1d114.js",
-      "path---index-52f7246828ac32c1d114.js.map"
-    ],
-    "path---hello-world": [
-      "path---hello-world-8b91530292900bf24a4a.js",
-      "path---hello-world-8b91530292900bf24a4a.js.map"
+      "path---index-0ddd4a98eb90c0242f3f.js",
+      "path---index-0ddd4a98eb90c0242f3f.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+      "component---src-pages-404-js-f22abc5540894261cdb1.js",
+      "component---src-pages-404-js-f22abc5540894261cdb1.js.map"
     ],
     "commons": [
-      "commons-6e82eaae3f56c620a9ec.js",
-      "build-js-styles.css",
-      "commons-6e82eaae3f56c620a9ec.js.map",
-      "build-js-styles.css.map"
+      "commons-53ce0c6f99b9c91b223c.js",
+      "commons-53ce0c6f99b9c91b223c.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-tags-js": [
+      "component---src-pages-tags-js-eea03050075b4914a0ae.js",
+      "component---src-pages-tags-js-eea03050075b4914a0ae.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-e6082083c1fdd914e67b.js",
-      "build-js-styles.css",
-      "app-e6082083c1fdd914e67b.js.map",
-      "build-js-styles.css.map"
+      "app-8db0d4c1560f16397f61.js",
+      "app-8db0d4c1560f16397f61.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",

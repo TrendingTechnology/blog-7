@@ -1,0 +1,2 @@
+webpackJsonp([27386866079921],{284:function(l,o){l.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/01-05-2018-hello-world/"},frontmatter:{title:"Hello World"}}}]}},pathContext:{tag:"Hello World"}}}});
+//# sourceMappingURL=path---tags-hello-world-4fa21298906f56a0cead.js.map
