@@ -25,6 +25,7 @@ class BlogIndex extends Component {
           const {title} = node.frontmatter
           return (
             <PostPreview 
+              key={node.fields.slug}
               slug={node.fields.slug}
               title={title}
               excerpt={node.excerpt}

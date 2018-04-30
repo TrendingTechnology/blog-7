@@ -1,10 +1,12 @@
 import Typography from 'typography'
 
+import {secondary} from '../styles/colors'
+
 const theme = {
   baseFontSize: '18px',
   baseLineHeight: 1.6,
   headerFontFamily: ['Roboto Slab', 'sans-serif'],
-  bodyFontFamily: ['Fira Sans Condensed', 'serif'],
+  bodyFontFamily: ['Fira Sans Condensed', 'serif']
 }
 
 const typography = new Typography(theme)

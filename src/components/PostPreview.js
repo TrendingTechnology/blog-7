@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { rhythm } from '../utils/typography'
+import { primary } from '../styles/colors'
 
 const PostPreview = ({slug, title, excerpt, tags, date}) => {
     return (
-        <div key={slug}>
+        <div>
             <h3
                 style={{
                     marginBottom: rhythm(1 / 4)
@@ -18,7 +19,8 @@ const PostPreview = ({slug, title, excerpt, tags, date}) => {
             {tags && tags.map((tag) => (
                 <small 
                     style={{
-                        paddingLeft: rhythm(1 / 5)
+                        marginLeft: rhythm(1 / 5),
+                        backgroundColor: primary[0]
                     }} 
                     key={tag}
                 >
