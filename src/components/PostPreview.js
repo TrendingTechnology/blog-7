@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
-import KebabCase from 'kebab-case';
+// Components
+import PostTag from './PostTag';
 
+// Utils
 import { rhythm } from '../utils/typography';
-import { primary } from '../styles/colors';
 
 const PostPreview = ({
   slug,
@@ -17,7 +18,7 @@ const PostPreview = ({
   <div>
     <h3
       style={{
-        marginBottom: rhythm(1 / 4),
+        marginBottom: rhythm(0.1),
       }}
     >
       <Link style={{ boxShadow: 'none' }} to={slug}>
@@ -26,17 +27,7 @@ const PostPreview = ({
     </h3>
     <small>{date}</small>
     {tags && tags.map(tag => (
-      <small
-        style={{
-            marginLeft: rhythm(1 / 5),
-            backgroundColor: primary[0],
-        }}
-        key={tag}
-      >
-        <Link to={`/tags/${KebabCase(tag)}/`}>
-          {tag}
-        </Link>
-      </small>
+      <PostTag key={tag} tag={tag} />
     ))}
     <p dangerouslySetInnerHTML={{ __html: excerpt }} />
   </div>
@@ -45,9 +36,9 @@ const PostPreview = ({
 PostPreview.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  excerpt: PropTypes.isRequired,
-  tags: PropTypes.isRequired,
-  date: PropTypes.isRequired,
+  excerpt: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  date: PropTypes.string.isRequired,
 };
 
 export default PostPreview;

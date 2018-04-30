@@ -1,29 +1,42 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Link from 'gatsby-link';
+import styled from 'styled-components';
+
+import SocialNetworksList from './SocialNetworksList';
 
 import { rhythm, scale } from '../utils/typography';
 
+const SiteHeader = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: ${rhythm(1.2)};
+`;
+
+const SiteTitle = styled.h1`
+  margin: 0;
+`;
+
 const Header = () => (
-  <Fragment>
-    <h1
+  <SiteHeader>
+    <SiteTitle
       style={{
-              ...scale(1.4),
-              marginBottom: rhythm(1.4),
-              marginTop: 0,
-            }}
+        ...scale(1.4),
+      }}
     >
       <Link
         style={{
-                boxShadow: 'none',
-                textDecoration: 'none',
-                color: 'inherit',
-              }}
+          boxShadow: 'none',
+          textDecoration: 'none',
+          color: 'inherit',
+        }}
         to="/"
       >
-              Васин блог
+        Васин блог
       </Link>
-    </h1>
-  </Fragment>
+    </SiteTitle>
+    <SocialNetworksList />
+  </SiteHeader>
 );
 
 export default Header;

@@ -19,7 +19,7 @@ const TagsPage = ({
   <div>
     <Helmet title={title} />
     <div>
-      <h2>Тэги</h2>
+      <h2>Все тэги</h2>
       <ul>
         {group.map(tag => (
           <li key={tag.fieldValue}>

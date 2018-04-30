@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 
@@ -17,7 +18,7 @@ const BlogPostTemplate = (props) => {
         style={{
           ...scale(-1 / 5),
           display: 'block',
-          marginBottom: rhythm(1),
+          marginBottom: rhythm(0.5),
           marginTop: rhythm(-1),
         }}
       >
@@ -57,6 +58,21 @@ const BlogPostTemplate = (props) => {
       </ul>
     </div>
   );
+};
+
+BlogPostTemplate.propTypes = {
+  pathContext: PropTypes.shape({
+    previous: PropTypes.isRequired,
+    next: PropTypes.isRequired,
+  }).isRequired,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.isRequired,
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default BlogPostTemplate;

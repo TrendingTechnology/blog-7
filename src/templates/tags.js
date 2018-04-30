@@ -7,7 +7,7 @@ import Link from 'gatsby-link';
 const Tags = ({ pathContext, data }) => {
   const { tag } = pathContext;
   const { edges, totalCount } = data.allMarkdownRemark;
-  const tagHeader = `Постов найденно с тэгом "${tag}": ${totalCount}`;
+  const tagHeader = `Найденно постов с тэгом "${tag}": ${totalCount}`;
 
   return (
     <div>
