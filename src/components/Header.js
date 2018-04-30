@@ -20,7 +20,7 @@ const Header = () => (
               }}
         to="/"
       >
-              Блог Васи
+              Васин блог
       </Link>
     </h1>
   </Fragment>
