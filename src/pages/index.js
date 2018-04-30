@@ -1,22 +1,24 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
+
+import '../asserts/fonts/fira-sans-condensed/firasanscondensed.css';
+import '../asserts/fonts/roboto-slab/robotoslab.css';
 
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const {title: siteTitle} = this.props.data.site.siteMetadata.title
+    const {edges: posts} = this.props.data.allMarkdownRemark.edges
 
     return (
       <div>
         <Helmet title={siteTitle} />
         <Bio />
         {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
+          const {title} = node.frontmatter || node.fields.slug
           return (
             <div key={node.fields.slug}>
               <h3

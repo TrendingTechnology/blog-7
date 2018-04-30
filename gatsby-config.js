@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Personal Blog',
+    title: 'Василий Кузенокв',
     author: 'Vassiliy Kuzenkov',
     description: 'My little blog for easy reading.',
-    siteUrl: 'http://bondiano.github.io',
+    siteUrl: 'https://blog.bondiano.xyz',
+    vkLink: 'https://vk.com/bondian0',
+    tgLink: 'https://telegram.me/bondian0'
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -38,15 +40,10 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-next`,
     {
       resolve: 'gatsby-plugin-typography',
       options: {

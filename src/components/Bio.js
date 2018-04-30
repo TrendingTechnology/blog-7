@@ -1,14 +1,7 @@
 import React from 'react'
-
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
-
-import profilePic from './profile-pic.jpg'
 import { rhythm } from '../utils/typography'
 
-class Bio extends React.Component {
-  render() {
+function Bio () {
     return (
       <div
         style={{
@@ -16,26 +9,13 @@ class Bio extends React.Component {
           marginBottom: rhythm(2.5),
         }}
       >
-        <img
-          src={profilePic}
-          alt={`Kyle Mathews`}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-          }}
-        />
         <p>
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
-          Francisco building useful things.{' '}
-          <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
-          </a>
+          <b>Йо йо йо</b>, вы читаете блог Василия Кузенкова. Мне 21, работаю разработчиком. 
+          Здесь пишу о своих проектах, учебе, жизни и любимой еде.
+          Увлекаюсь в основном программированием, а также рэпом, рассказиками, фентази и научной фантастикой.
         </p>
       </div>
     )
-  }
 }
 
 export default Bio
