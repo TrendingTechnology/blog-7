@@ -18,5 +18,8 @@ module.exports = {
       "experimentalObjectRestSpread": true,
       "jsx": true,
     },
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": 0
   }
 }

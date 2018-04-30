@@ -1,19 +1,17 @@
-import Typography from 'typography'
-
-import {secondary} from '../styles/colors'
+import Typography from 'typography';
 
 const theme = {
   baseFontSize: '18px',
   baseLineHeight: 1.6,
   headerFontFamily: ['Roboto Slab', 'sans-serif'],
-  bodyFontFamily: ['Fira Sans Condensed', 'serif']
-}
+  bodyFontFamily: ['Fira Sans Condensed', 'serif'],
+};
 
-const typography = new Typography(theme)
+const typography = new Typography(theme);
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
-  typography.injectStyles()
+  typography.injectStyles();
 }
 
-export default typography
+export default typography;

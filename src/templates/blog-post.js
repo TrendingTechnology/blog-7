@@ -1,15 +1,15 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
 
-import Header from '../components/Header'
-import { rhythm, scale } from '../utils/typography'
+import Header from '../components/Header';
+import { rhythm, scale } from '../utils/typography';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const {title: siteTitle} = this.props.data.site.siteMetadata
-    const { previous, next } = this.props.pathContext
+    const post = this.props.data.markdownRemark;
+    const { title: siteTitle } = this.props.data.site.siteMetadata;
+    const { previous, next } = this.props.pathContext;
 
     return (
       <div>
@@ -59,11 +59,11 @@ class BlogPostTemplate extends React.Component {
           )}
         </ul>
       </div>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -83,4 +83,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
