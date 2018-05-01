@@ -58,8 +58,8 @@ module.exports = {
         name: "Bondiano Blog",
         short_name: "Blog",
         start_url: "/",
-        background_color: "#fffff",
-        theme_color: "#fffffff",
+        background_color: "#ffffff",
+        theme_color: "#ffffff",
         display: "minimal-ui",
         icon: "static/icon.png", // This path is relative to the root of the site.
       },

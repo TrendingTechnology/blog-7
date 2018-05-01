@@ -2,7 +2,25 @@ import Typography from 'typography';
 
 const theme = {
   baseFontSize: '18px',
-  baseLineHeight: 1.6,
+  baseLineHeight: 1.4,
+  googleFonts: [
+    {
+      name: 'Roboto Slab',
+      styles: [
+        '400',
+        '700',
+      ],
+      subset: ['cyrillic'],
+    },
+    {
+      name: 'Fira Sans Condensed',
+      styles: [
+        '400',
+        '700',
+      ],
+      subset: ['cyrillic'],
+    },
+  ],
   headerFontFamily: ['Roboto Slab', 'sans-serif'],
   bodyFontFamily: ['Fira Sans Condensed', 'serif'],
 };

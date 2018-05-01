@@ -5,9 +5,6 @@ import styled from 'styled-components';
 // Components
 import Header from '../components/Header';
 
-// Styles
-import '../asserts/index.css';
-
 import { blue, darkBlue } from '../styles/colors';
 
 // Utils
@@ -16,7 +13,7 @@ import { rhythm } from '../utils/typography';
 const MainWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  max-width: ${rhythm(30)};
+  max-width: ${rhythm(34)};
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
 
   @media screen and (max-width: 450px) {
