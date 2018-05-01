@@ -1,2 +1,2 @@
-webpackJsonp([0x74963e75850c],{286:function(t,e){t.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/01-05-2018-hello-world/"},frontmatter:{title:"Hello World"}}}]}},pathContext:{tag:"Будни"}}}});
+webpackJsonp([0x74963e75850c],{285:function(t,e){t.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/01-05-2018-hello-world/"},frontmatter:{title:"Hello World"}}}]}},pathContext:{tag:"Будни"}}}});
 //# sourceMappingURL=path---tags-будни-6a36fe770f4004d508ee.js.map
