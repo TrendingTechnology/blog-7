@@ -17,7 +17,7 @@ const MainWrapper = styled.div`
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
 
   @media screen and (max-width: 450px) {
-    padding: 0;
+    padding: ${rhythm(0.5)} ${rhythm(0.5)};
   }
 
   a {
