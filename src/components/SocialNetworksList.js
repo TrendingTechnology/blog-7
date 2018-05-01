@@ -9,6 +9,9 @@ import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
 import faRss from '@fortawesome/fontawesome-free-solid/faRss';
 
 const SocialNetworksWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+
   a {
     cursor: pointer;
     color: inherit !important;

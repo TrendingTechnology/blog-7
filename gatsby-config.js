@@ -7,7 +7,7 @@ module.exports = {
     vkLink: 'https://vk.com/bondian0',
     tgLink: 'https://telegram.me/bondian0'
   },
-  pathPrefix: '/blog',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,7 +32,14 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-prismjs',
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {sh: "bash"},
+            },
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
@@ -54,7 +61,7 @@ module.exports = {
         background_color: "#fffff",
         theme_color: "#fffffff",
         display: "minimal-ui",
-        icon: "/icon.png", // This path is relative to the root of the site.
+        icon: "static/icon.png", // This path is relative to the root of the site.
       },
     },
     {

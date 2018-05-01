@@ -11,6 +11,10 @@ const SiteHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   margin-bottom: ${rhythm(1.2)};
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+  }
 `;
 
 const SiteTitle = styled.h1`
