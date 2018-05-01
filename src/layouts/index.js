@@ -6,8 +6,7 @@ import styled from 'styled-components';
 import Header from '../components/Header';
 
 // Styles
-import '../asserts/fonts/fira-sans-condensed/firasanscondensed.css';
-import '../asserts/fonts/roboto-slab/robotoslab.css';
+import '../asserts/index.css';
 
 import { blue, darkBlue } from '../styles/colors';
 
