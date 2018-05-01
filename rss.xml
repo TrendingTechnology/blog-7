@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Василий Кузенков]]></title><description><![CDATA[My little blog for easy reading.]]></description><link>https://blog.bondiano.xyz</link><generator>RSS for Node</generator><lastBuildDate>Mon, 30 Apr 2018 20:45:50 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[Йохохо , это мой первый пост в блог. Всем привет, кто читает, и добро пожаловать. Я когда-то уже вел блог, и то было замечательное время. И…]]></description><link>https://blog.bondiano.xyz/01-05-2018-hello-world/</link><guid isPermaLink="false">https://blog.bondiano.xyz/01-05-2018-hello-world/</guid><pubDate>Tue, 01 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Йохохо&lt;/strong&gt;, это мой первый пост в блог. Всем привет, кто читает, и добро пожаловать.&lt;br&gt;
-Я когда-то уже вел блог, и то было замечательное время. И вот, я снова вернулся.
-Надеюсь, в этот раз я его не заброшу. Постараюсь делать регулярные записи примерно раза 2-3 в месяц.&lt;br&gt;
-Этот блог сделан при помощи генератора статических сайтов &lt;a href=&quot;http://gatsbyjs.org/&quot;&gt;gatsby&lt;/a&gt;. Около трех дней ушло на чтение документации и прохождения замечательных туториалов на их сайте, еще пару вечеров на мелкие попытки начать, и один выходной день &lt;em&gt;(30 мая)&lt;/em&gt; на то, чтобы по сути все сделать.&lt;br&gt;
-Основной тематикой блога будет моя жизнь, иногда, буду писать статьи про программирование, а также про фильмы, игры, аниме, книги, когда будут, то и свои рассказики.&lt;br&gt;
-Также нужно сделать в блог следующие фичи:  &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Василий Кузенков]]></title><description><![CDATA[My little blog for easy reading.]]></description><link>https://blog.bondiano.xyz</link><generator>RSS for Node</generator><lastBuildDate>Tue, 01 May 2018 05:10:43 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[Йохохо , это мой первый пост в блог. Всем привет, кто читает, и добро пожаловать. Я когда-то уже вел блог, и то было замечательное время. И…]]></description><link>https://blog.bondiano.xyz/01-05-2018-hello-world/</link><guid isPermaLink="false">https://blog.bondiano.xyz/01-05-2018-hello-world/</guid><pubDate>Tue, 01 May 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Йохохо&lt;/strong&gt;, это мой первый пост в блог. Всем привет, кто читает, и добро пожаловать.&lt;/p&gt;
+&lt;p&gt;Я когда-то уже вел блог, и то было замечательное время. И вот, я снова вернулся.
+Надеюсь, в этот раз я его не заброшу. Постараюсь делать регулярные записи примерно раза 2-3 в месяц.&lt;/p&gt;
+&lt;p&gt;Этот блог сделан при помощи генератора статических сайтов &lt;a href=&quot;http://gatsbyjs.org/&quot;&gt;gatsby&lt;/a&gt;. Около трех дней ушло на чтение документации и прохождения замечательных туториалов на их сайте, еще пару вечеров на мелкие попытки начать, и один выходной день &lt;em&gt;(30 мая)&lt;/em&gt; на то, чтобы по сути все сделать.&lt;/p&gt;
+&lt;p&gt;Основной тематикой блога будет моя жизнь, иногда, буду писать статьи про программирование, а также про фильмы, игры, аниме, книги, когда будут, то и свои рассказики.&lt;/p&gt;
+&lt;p&gt;Также нужно сделать в блог следующие фичи:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Добавить DISQUS&lt;/li&gt;
 &lt;li&gt;Удобный скриптик для создания шаблона статьи&lt;/li&gt;
@@ -12,4 +12,41 @@
 &lt;li&gt;Мелочи по SEO и Дизайну&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;В целом, я пока доволен gatby, довольно простой (если знаешь React) и удобный инструмент.
-До скорого.&lt;/p&gt;</content:encoded></item></channel></rss>
+До скорого.&lt;/p&gt;
+&lt;p&gt;Хотя, вот вам на последок вам миленький котик
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/cat-fdca4dc0b9368c01ad18924144a8b551-6d9f6.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 595px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 133.359375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGk6qxqRoHMnYVVgZI//8QAGxAAAgIDAQAAAAAAAAAAAAAAAgMAARESEzH/2gAIAQEAAQUCrwGFkUdJzuMiRslsxUZWTTWizgjW8//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABsQAAICAwEAAAAAAAAAAAAAAAABEBECEjEh/9oACAEBAAY/AnZ6zZ51Nos6JRyP/8QAHBABAAIDAAMAAAAAAAAAAAAAAQARITFBUXGR/9oACAEBAAE/IdUA35mD5UQw5R1UEdhXIMNY98hSAe+OTFG0+6Q2ZnCQCp//2gAMAwEAAgADAAAAEMw0P//EABgRAAIDAAAAAAAAAAAAAAAAAAARARAx/9oACAEDAQE/EMFAnX//xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREx/9oACAECAQE/EOtqVr//xAAdEAEAAgIDAQEAAAAAAAAAAAABABEhUTFBYXGB/9oACAEBAAE/EDgVVoErd7l3ZAK1aBj7zAepaSWovdisKePUMA45tUDXu45tlp+zjYqz1XMyUe2ODUUHm1fWAgBPYguS+iEoBP/Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;A Cat&quot;
+        title=&quot;&quot;
+        src=&quot;/blog/static/cat-fdca4dc0b9368c01ad18924144a8b551-d1caa.jpg&quot;
+        srcset=&quot;/blog/static/cat-fdca4dc0b9368c01ad18924144a8b551-117f0.jpg 149w,
+/blog/static/cat-fdca4dc0b9368c01ad18924144a8b551-337af.jpg 298w,
+/blog/static/cat-fdca4dc0b9368c01ad18924144a8b551-d1caa.jpg 595w,
+/blog/static/cat-fdca4dc0b9368c01ad18924144a8b551-bee43.jpg 893w,
+/blog/static/cat-fdca4dc0b9368c01ad18924144a8b551-a5da0.jpg 1190w,
+/blog/static/cat-fdca4dc0b9368c01ad18924144a8b551-6d9f6.jpg 1280w&quot;
+        sizes=&quot;(max-width: 595px) 100vw, 595px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item></channel></rss>
