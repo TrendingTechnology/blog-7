@@ -25,9 +25,7 @@ const TagLink = styled(Link)`
 
 const PostTag = ({ tag }) => (
   <TagContainer>
-    <TagLink
-      to={`/tags/${KebabCase(tag)}/`}
-    >
+    <TagLink to={`/tags/${KebabCase(tag)}/`}>
       {tag}
     </TagLink>
   </TagContainer>

@@ -19,23 +19,19 @@ const SiteHeader = styled.header`
 
 const SiteTitle = styled.h1`
   margin: 0;
+
+  a {
+    ${scale(1.4)}
+    box-shadow: none;
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 const Header = () => (
   <SiteHeader>
-    <SiteTitle
-      style={{
-        ...scale(1.4),
-      }}
-    >
-      <Link
-        style={{
-          boxShadow: 'none',
-          textDecoration: 'none',
-          color: 'inherit',
-        }}
-        to="/"
-      >
+    <SiteTitle>
+      <Link to="/">
         Васин блог
       </Link>
     </SiteTitle>
