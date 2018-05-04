@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Bio from '../components/Bio';
 import PostPreview from '../components/PostPreview';
 
 const BlogIndex = (props) => {
-  const { location, children } = props;
   const { title: siteTitle } = props.data.site.siteMetadata;
   const { edges: posts } = props.data.allMarkdownRemark;
   return (
@@ -28,6 +28,19 @@ const BlogIndex = (props) => {
       })}
     </Fragment>
   );
+};
+
+BlogIndex.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default BlogIndex;

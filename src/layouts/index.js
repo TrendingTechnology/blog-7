@@ -2,12 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-// Components
 import Header from '../components/Header';
-
 import { blue, darkBlue } from '../styles/colors';
 
-// Utils
 import { rhythm } from '../utils/typography';
 
 const MainWrapper = styled.div`

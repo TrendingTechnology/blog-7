@@ -29,6 +29,7 @@ const PostPreview = ({
     {tags && tags.map(tag => (
       <PostTag key={tag} tag={tag} />
     ))}
+    { {/* eslint-disable-next-line */} }
     <p dangerouslySetInnerHTML={{ __html: excerpt }} />
   </div>
 );

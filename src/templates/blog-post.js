@@ -24,6 +24,7 @@ const BlogPostTemplate = (props) => {
       >
         {post.frontmatter.date}
       </p>
+      { {/* eslint-disable-next-line */} }
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <hr
         style={{
