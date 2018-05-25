@@ -10,7 +10,7 @@ const SiteHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: ${rhythm(1.2)};
+  margin: 0 ${rhythm(0.3)} ${rhythm(0.5)} ${rhythm(0.3)};
 
   @media screen and (max-width: 450px) {
     flex-direction: column;
@@ -19,21 +19,21 @@ const SiteHeader = styled.header`
 
 const SiteTitle = styled.h1`
   margin: 0;
+`;
 
-  a {
+const TitleLink = styled(Link)`
     ${scale(1.4)}
     box-shadow: none;
     text-decoration: none;
     color: inherit;
-  }
 `;
 
 const Header = () => (
   <SiteHeader>
     <SiteTitle>
-      <Link to="/">
+      <TitleLink to="/">
         Васин блог
-      </Link>
+      </TitleLink>
     </SiteTitle>
     <SocialNetworksList />
   </SiteHeader>

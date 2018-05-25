@@ -11,64 +11,68 @@ import faRss from '@fortawesome/fontawesome-free-solid/faRss';
 const SocialNetworksWrapper = styled.div`
   display: flex;
   flex-direction: row;
+`;
 
-  a {
+const SocialNetworkLink = styled.a`
     cursor: pointer;
     color: inherit !important;
     padding-right: 10px;
-  }
 
-  a:hover {
+  &:hover {
     color: hsla(0, 0%, 0%, 1) !important;
   }
 
-  a:last-child {
+  &:last-child {
     padding-right: 0
   }
 `;
 
+const socialNetworks = [
+  {
+    type: 'tg',
+    title: 'Telegram',
+    link: 'https://telegram.me/bondian0',
+    icon: faTelegramPlane,
+  },
+  {
+    type: 'vk',
+    title: 'Вконтакте',
+    link: 'https://vk.com/bondian0',
+    icon: faVk,
+  },
+  {
+    type: 'gh',
+    title: 'Github',
+    link: 'https://github.com/bondiano',
+    icon: faGithub,
+  },
+  {
+    type: 'mail',
+    title: 'Письмо',
+    link: 'mailto:batbondik0@gmail.com?subject=From blog',
+    icon: faEnvelope,
+  },
+  {
+    type: 'rss',
+    title: 'RSS',
+    link: './rss.xml',
+    icon: faRss,
+  },
+];
+
 const SocialNetworksList = () => (
   <SocialNetworksWrapper>
-    <a
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      title="Telegram"
-      href="https://telegram.me/bondian0"
-    >
-      <FontAwesomeIcon icon={faTelegramPlane} size="lg" />
-    </a>
-
-    <a
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      title="Вконтакте"
-      href="https://vk.com/bondian0"
-    >
-      <FontAwesomeIcon icon={faVk} size="lg" />
-    </a>
-
-    <a
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      title="Github"
-      href="https://github.com/bondiano"
-    >
-      <FontAwesomeIcon icon={faGithub} size="lg" />
-    </a>
-
-    <a
-      title="Письмо"
-      href="mailto:batbondik0@gmail.com?subject=Важное сообщение"
-    >
-      <FontAwesomeIcon icon={faEnvelope} size="lg" />
-    </a>
-
-    <a
-      title="RSS"
-      href="./rss.xml"
-    >
-      <FontAwesomeIcon icon={faRss} size="lg" />
-    </a>
+    {socialNetworks.map(sn => (
+      <SocialNetworkLink
+        key={sn.type}
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        title={sn.title}
+        href={sn.link}
+      >
+        <FontAwesomeIcon icon={sn.icon} size="lg" />
+      </SocialNetworkLink>
+    ))}
   </SocialNetworksWrapper>
 );
 

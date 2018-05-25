@@ -1,12 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Link from 'gatsby-link';
-
+import { primary, primaryVariant } from '../utils/colors';
 // Components
 import PostTag from './PostTag';
+import PostDate from './PostDate';
 
-// Utils
-import { rhythm } from '../utils/typography';
+// Utilites
+import { scale } from '../utils/typography';
+
+const PostTitle = styled.h3`
+  ${scale(0.5)}
+  margin-bottom: 0;
+`;
+
+const PostTitleLink = styled(Link)`
+  color: ${primaryVariant};
+
+  &:hover {
+    color: ${primary};
+  }
+`;
 
 const PostPreview = ({
   slug,
@@ -16,20 +31,15 @@ const PostPreview = ({
   date,
 }) => (
   <div>
-    <h3
-      style={{
-        marginBottom: rhythm(0.1),
-      }}
-    >
-      <Link style={{ boxShadow: 'none' }} to={slug}>
+    <PostTitle>
+      <PostTitleLink to={slug}>
         {title}
-      </Link>
-    </h3>
-    <small>{date}</small>
+      </PostTitleLink>
+    </PostTitle>
+    <PostDate date={date} />
     {tags && tags.map(tag => (
       <PostTag key={tag} tag={tag} />
     ))}
-    { {/* eslint-disable-next-line */} }
     <p dangerouslySetInnerHTML={{ __html: excerpt }} />
   </div>
 );

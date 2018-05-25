@@ -2,30 +2,30 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
+// Components
 import Bio from '../components/Bio';
 import PostPreview from '../components/PostPreview';
 
+const PostPreviewList = ({ posts }) =>
+  posts.map(({ node }) => (
+    <PostPreview
+      date={node.frontmatter.date}
+      excerpt={node.excerpt}
+      key={node.fields.slug}
+      slug={node.fields.slug}
+      tags={node.frontmatter.tags}
+      title={node.frontmatter.title}
+    />
+  ));
+
 const BlogIndex = (props) => {
-  const { title: siteTitle } = props.data.site.siteMetadata;
-  const { edges: posts } = props.data.allMarkdownRemark;
+  const siteTitle = props.data.site.siteMetadata.title;
+  const posts = props.data.allMarkdownRemark.edges;
   return (
     <Fragment>
       <Helmet title={siteTitle} />
       <Bio />
-
-      {posts.map(({ node }) => {
-        const { title } = node.frontmatter;
-        return (
-          <PostPreview
-            key={node.fields.slug}
-            slug={node.fields.slug}
-            title={title}
-            excerpt={node.excerpt}
-            tags={node.frontmatter.tags}
-            date={node.frontmatter.date}
-          />
-        );
-      })}
+      <PostPreviewList posts={posts} />
     </Fragment>
   );
 };

@@ -4,22 +4,20 @@ import styled from 'styled-components';
 
 import KebabCase from 'kebab-case';
 import Link from 'gatsby-link';
-
-import { blue, darkBlue, lightBlue } from '../styles/colors';
-import { rhythm } from '../utils/typography';
+import { secondary, primary, primaryVariant } from '../utils/colors';
 
 const TagContainer = styled.small`
-  margin-left: ${rhythm(1 / 5)};
-  background-color: ${lightBlue};
+  margin-left: 10px;
+  background-color: ${secondary};
   padding: 2px;
 `;
 
 const TagLink = styled(Link)`
   text-decoration: none;
-  color: ${blue};
+  color: ${primary};
 
   &:hover {
-    color: ${darkBlue};
+    color: ${primaryVariant};
   }
 `;
 

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
 
-import { rhythm, scale } from '../utils/typography';
+// Components
+import Helmet from 'react-helmet';
+
+import PostPagination from '../components/PostPagination';
 
 const BlogPostTemplate = (props) => {
   const post = props.data.markdownRemark;
@@ -11,53 +12,12 @@ const BlogPostTemplate = (props) => {
   const { previous, next } = props.pathContext;
 
   return (
-    <div>
+    <Fragment>
       <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
       <h2>{post.frontmatter.title}</h2>
-      <p
-        style={{
-          ...scale(-1 / 5),
-          display: 'block',
-          marginBottom: rhythm(0.5),
-          marginTop: rhythm(-1),
-        }}
-      >
-        {post.frontmatter.date}
-      </p>
-      { {/* eslint-disable-next-line */} }
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <hr
-        style={{
-          marginBottom: rhythm(1),
-        }}
-      />
-
-      <ul
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'space-between',
-          listStyle: 'none',
-          padding: 0,
-        }}
-      >
-        {previous && (
-          <li>
-            <Link to={previous.fields.slug} rel="prev">
-              ← {previous.frontmatter.title}
-            </Link>
-          </li>
-        )}
-
-        {next && (
-          <li>
-            <Link to={next.fields.slug} rel="next">
-              {next.frontmatter.title} →
-            </Link>
-          </li>
-        )}
-      </ul>
-    </div>
+      <PostPagination previous={previous} next={next} />
+    </Fragment>
   );
 };
 
