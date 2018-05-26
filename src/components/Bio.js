@@ -12,6 +12,7 @@ const BioContent = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: ${rhythm(0.5)};
+    padding: ${rhythm(0.3)};
     background-color: ${surface};
     border-top: 1px solid ${surfaceVariant};
     border-bottom: 1px solid ${surfaceVariant};
@@ -19,7 +20,6 @@ const BioContent = styled.div`
 
 const Text = styled.p`
   text-indent: ${rhythm(0.5)};
-  padding: ${rhythm(0.2)};
   margin-bottom: 0;
 `;
 

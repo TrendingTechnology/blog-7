@@ -29,6 +29,12 @@ module.exports = {
             },
           },
           {
+            resolve: 'gatsby-remark-emoji', // <-- this adds emoji
+            options: {
+              emojiConversion: 'shortnameToImage',
+            }
+          },
+          {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,

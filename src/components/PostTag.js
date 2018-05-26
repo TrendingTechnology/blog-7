@@ -1,15 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import kebabCase from 'kebab-case';
 
-import KebabCase from 'kebab-case';
+// Components
 import Link from 'gatsby-link';
+
+// Utilites
+import { rhythm } from '../utils/typography';
 import { secondary, primary, primaryVariant } from '../utils/colors';
 
 const TagContainer = styled.small`
-  margin-left: 10px;
+  margin-left: ${rhythm(0.2)};
   background-color: ${secondary};
-  padding: 2px;
+  padding: ${rhythm(0.2)};
 `;
 
 const TagLink = styled(Link)`
@@ -23,7 +27,7 @@ const TagLink = styled(Link)`
 
 const PostTag = ({ tag }) => (
   <TagContainer>
-    <TagLink to={`/tags/${KebabCase(tag)}/`}>
+    <TagLink to={`/tags/${kebabCase(tag)}/`}>
       {tag}
     </TagLink>
   </TagContainer>

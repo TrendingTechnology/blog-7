@@ -17,6 +17,6 @@ const PostText = styled.article`
   > :last-child {
     margin-bottom: 0;
   }
-`
+`;
 
 export default PostText;

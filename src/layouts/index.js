@@ -10,7 +10,7 @@ const MainWrapper = styled.main`
   margin-left: auto;
   margin-right: auto;
   max-width: ${rhythm(34)};
-  padding: ${rhythm(1.5)} ${rhythm(0.65)};
+  padding: ${rhythm(1.2)} ${rhythm(0.65)} 0 ${rhythm(0.65)};
 
   @media screen and (max-width: 450px) {
     padding: ${rhythm(0.5)} ${rhythm(0.5)};

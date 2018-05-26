@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Link from 'gatsby-link';
 import PostTag from './PostTag';
 import PostDate from './PostDate';
-import { Box } from './kit';
+import { Box, PostInfoBox } from './kit';
 
 // Utilites
 import { scale, rhythm } from '../utils/typography';
@@ -24,13 +24,6 @@ const PostTitleLink = styled(Link)`
     color: ${primary};
   }
 `;
-
-const PostInfoBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: ${rhythm(0.2)} 0;
-`
 
 const PreviewText = styled.p`
   margin-bottom: 0;
