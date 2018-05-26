@@ -12,6 +12,10 @@ const Box = styled.div`
     margin-bottom: 0;
   }
 
+  img.emojione {
+    max-width: 1.5rem;
+  }
+
   @media screen and (max-width: 450px) {
     box-shadow: none;
     padding: ${rhythm(0.1)};
