@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-// Utilites
-import { rhythm } from '../../utils/typography';
-
 const PostText = styled.article`
   display: flex;
   flex-direction: column;

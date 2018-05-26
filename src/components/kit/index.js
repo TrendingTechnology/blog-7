@@ -4,8 +4,8 @@ import PostTitle from './PostTitle';
 import PostInfoBox from './PostInfoBox';
 
 export default {
-    Box,
-    PostText,
-    PostTitle,
-    PostInfoBox
+  Box,
+  PostText,
+  PostTitle,
+  PostInfoBox,
 };

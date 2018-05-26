@@ -13,11 +13,11 @@ const PostInfoBox = styled.div`
 `;
 
 PostInfoBox.defaultProps = {
-  align: 'flex-start'
+  align: 'flex-start',
 };
 
 PostInfoBox.propTypes = {
-  align: PropTypes.string
+  align: PropTypes.string,
 };
 
 export default PostInfoBox;

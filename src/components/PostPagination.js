@@ -6,7 +6,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 
 // Utilites
-import { secondary, primary, primaryVariant } from '../utils/colors';
+import { primary, primaryVariant } from '../utils/colors';
 
 const PaginationWrapper = styled.ul`
     display: flex;
@@ -31,24 +31,24 @@ const PaginationLink = styled(Link)`
     color: ${primaryVariant};
     border-color: ${primaryVariant};
   }
-`
+`;
 
 const Arrow = styled.p`
   margin-bottom: 0;
-`
+`;
 
 const Pagination = styled.li`
   display: flex;
   flex-direction: row;
   align-content: center;
   margin-bottom: 0;
-`
+`;
 
 const PostPagination = ({ previous, next }) => (
   <PaginationWrapper>
     {previous && (
       <Pagination>
-      <Arrow>←</Arrow>
+        <Arrow>←</Arrow>
         <PaginationLink to={previous.fields.slug} rel="prev">
           {previous.frontmatter.title}
         </PaginationLink>
@@ -66,9 +66,25 @@ const PostPagination = ({ previous, next }) => (
   </PaginationWrapper>
 );
 
+/* eslint-disable */
 PostPagination.propTypes = {
-  previous: PropTypes.object,
-  next: PropTypes.object,
+  previous: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+    }).isRequired,
+    fields: PropTypes.shape({
+      slug: PropTypes.string.isRequired,
+    }).isRequired,
+  }),
+  next: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+    }).isRequired,
+    fields: PropTypes.shape({
+      slug: PropTypes.string.isRequired,
+    }).isRequired,
+  }),
 };
+/* eslint-enable */
 
 export default PostPagination;

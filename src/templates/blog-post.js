@@ -22,14 +22,14 @@ const BlogPostTemplate = (props) => {
         <PostTitle>{title}</PostTitle>
         <PostInfoBox align="flex-end">
           <PostDate date={date} />
-            {tags && tags.map(tag => (
-              <PostTag key={tag} tag={tag} />
+          {tags && tags.map(tag => (
+            <PostTag key={tag} tag={tag} />
             ))}
         </PostInfoBox>
         <PostText dangerouslySetInnerHTML={{ __html: post.html }} />
       </Box>
       { (previous || next) && <PostPagination previous={previous} next={next} /> }
-      <Disqus title={title} siteUrl={siteUrl} slug={slug} shortname={disqusShortname}/>
+      <Disqus title={title} siteUrl={siteUrl} slug={slug} shortname={disqusShortname} />
     </Fragment>
   );
 };

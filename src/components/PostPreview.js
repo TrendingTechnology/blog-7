@@ -9,7 +9,7 @@ import PostDate from './PostDate';
 import { Box, PostInfoBox } from './kit';
 
 // Utilites
-import { scale, rhythm } from '../utils/typography';
+import { scale } from '../utils/typography';
 import { primary, primaryVariant } from '../utils/colors';
 
 const PostTitle = styled.h3`
@@ -27,7 +27,7 @@ const PostTitleLink = styled(Link)`
 
 const PreviewText = styled.p`
   margin-bottom: 0;
-`
+`;
 
 const PostPreview = ({
   slug,
