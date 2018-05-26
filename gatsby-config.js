@@ -31,7 +31,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-emoji', // <-- this adds emoji
             options: {
-              emojiConversion: 'shortnameToImage',
+              emojiConversion: 'shortnameToUnicode',
             }
           },
           {

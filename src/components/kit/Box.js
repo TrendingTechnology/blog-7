@@ -8,12 +8,8 @@ const Box = styled.div`
   padding: ${rhythm(0.5)};
   margin-bottom: ${rhythm(0.5)};
 
-  :last-child {
+  > :last-child {
     margin-bottom: 0;
-  }
-
-  img.emojione {
-    max-width: 1.5rem;
   }
 
   @media screen and (max-width: 450px) {
