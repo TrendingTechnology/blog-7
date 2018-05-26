@@ -1,0 +1,2 @@
+webpackJsonp([0x74963e75850c],{293:function(t,e){t.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/articles/01-05-2018-hello-world/"},frontmatter:{title:"Hello World"}}}]}},pathContext:{tag:"Будни"}}}});
+//# sourceMappingURL=path---tags-будни-9db728722eb2247adb27.js.map

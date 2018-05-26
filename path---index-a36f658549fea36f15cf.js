@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{290:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Василий Кузенков"}},allMarkdownRemark:{edges:[{node:{excerpt:"Йохохо , это мой первый пост в блог. Всем привет, кто читает, и добро пожаловать. Я когда-то уже вел блог, и то было замечательное время. И…",fields:{slug:"/articles/01-05-2018-hello-world/"},frontmatter:{date:"01 May, 2018",title:"Hello World",tags:["Hello World","Будни"]}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-a36f658549fea36f15cf.js.map
