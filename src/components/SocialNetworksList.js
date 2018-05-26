@@ -8,25 +8,6 @@ import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
 import faRss from '@fortawesome/fontawesome-free-solid/faRss';
 
-const SocialNetworksWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-const SocialNetworkLink = styled.a`
-    cursor: pointer;
-    color: inherit !important;
-    padding-right: 10px;
-
-  &:hover {
-    color: hsla(0, 0%, 0%, 1) !important;
-  }
-
-  &:last-child {
-    padding-right: 0
-  }
-`;
-
 const socialNetworks = [
   {
     type: 'tg',
@@ -59,6 +40,25 @@ const socialNetworks = [
     icon: faRss,
   },
 ];
+
+const SocialNetworksWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const SocialNetworkLink = styled.a`
+    cursor: pointer;
+    color: inherit !important;
+    padding-right: 10px;
+
+  &:hover {
+    color: hsla(0, 0%, 0%, 1) !important;
+  }
+
+  &:last-child {
+    padding-right: 0
+  }
+`;
 
 const SocialNetworksList = () => (
   <SocialNetworksWrapper>

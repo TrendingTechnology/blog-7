@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Link from 'gatsby-link';
-import { primary, primaryVariant } from '../utils/colors';
+
 // Components
+import Link from 'gatsby-link';
 import PostTag from './PostTag';
 import PostDate from './PostDate';
+import { Box } from './kit';
 
 // Utilites
-import { scale } from '../utils/typography';
+import { scale, rhythm } from '../utils/typography';
+import { primary, primaryVariant } from '../utils/colors';
 
 const PostTitle = styled.h3`
   ${scale(0.5)}
@@ -23,6 +25,17 @@ const PostTitleLink = styled(Link)`
   }
 `;
 
+const PostInfoBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: ${rhythm(0.2)} 0;
+`
+
+const PreviewText = styled.p`
+  margin-bottom: 0;
+`
+
 const PostPreview = ({
   slug,
   title,
@@ -30,18 +43,22 @@ const PostPreview = ({
   tags,
   date,
 }) => (
-  <div>
+  <Box>
     <PostTitle>
       <PostTitleLink to={slug}>
         {title}
       </PostTitleLink>
     </PostTitle>
-    <PostDate date={date} />
-    {tags && tags.map(tag => (
-      <PostTag key={tag} tag={tag} />
-    ))}
-    <p dangerouslySetInnerHTML={{ __html: excerpt }} />
-  </div>
+
+    <PostInfoBox>
+      <PostDate date={date} />
+      {tags && tags.map(tag => (
+        <PostTag key={tag} tag={tag} />
+      ))}
+    </PostInfoBox>
+
+    <PreviewText dangerouslySetInnerHTML={{ __html: excerpt }} />
+  </Box>
 );
 
 PostPreview.propTypes = {

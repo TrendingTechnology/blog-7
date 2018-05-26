@@ -6,7 +6,7 @@ import Header from '../components/Header';
 
 import { rhythm } from '../utils/typography';
 
-const MainWrapper = styled.div`
+const MainWrapper = styled.main`
   margin-left: auto;
   margin-right: auto;
   max-width: ${rhythm(34)};

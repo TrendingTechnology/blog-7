@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { getAge } from '../utils/helpers';
 
+// Utilites
+import { getAge } from '../utils/helpers';
 import { surface, surfaceVariant } from '../utils/colors';
 import { rhythm } from '../utils/typography';
 

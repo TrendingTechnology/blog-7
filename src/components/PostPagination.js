@@ -11,6 +11,7 @@ const PaginationWrapper = styled.ul`
     list-style: none;
     padding: 0;
 `;
+
 const PostPagination = ({ previous, next }) => (
   <PaginationWrapper>
     {previous && (
@@ -32,8 +33,8 @@ const PostPagination = ({ previous, next }) => (
 );
 
 PostPagination.propTypes = {
-  previous: PropTypes.isRequired,
-  next: PropTypes.isRequired,
+  previous: PropTypes.object,
+  next: PropTypes.object,
 };
 
 export default PostPagination;

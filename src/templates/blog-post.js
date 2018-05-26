@@ -3,20 +3,24 @@ import PropTypes from 'prop-types';
 
 // Components
 import Helmet from 'react-helmet';
-
 import PostPagination from '../components/PostPagination';
+import Disqus from '../components/Disqus';
+import { Box, PostText, PostTitle } from '../components/kit';
 
 const BlogPostTemplate = (props) => {
   const post = props.data.markdownRemark;
-  const { title: siteTitle } = props.data.site.siteMetadata;
-  const { previous, next } = props.pathContext;
+  const { title: siteTitle, siteUrl, disqusShortname } = props.data.site.siteMetadata;
+  const { previous, next, slug } = props.pathContext;
 
   return (
     <Fragment>
-      <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-      <h2>{post.frontmatter.title}</h2>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <PostPagination previous={previous} next={next} />
+      <Box>
+        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <PostTitle>{post.frontmatter.title}</PostTitle>
+        <PostText dangerouslySetInnerHTML={{ __html: post.html }} />
+      </Box>
+      { (previous || next) && <PostPagination previous={previous} next={next} /> }
+      <Disqus title={post.frontmatter.title} siteUrl={siteUrl} slug={slug} shortname={disqusShortname}/>
     </Fragment>
   );
 };
@@ -44,6 +48,8 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
+        disqusShortname
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

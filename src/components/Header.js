@@ -1,9 +1,11 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import styled from 'styled-components';
 
+// Components
+import Link from 'gatsby-link';
 import SocialNetworksList from './SocialNetworksList';
 
+// Utilites
 import { rhythm, scale } from '../utils/typography';
 
 const SiteHeader = styled.header`

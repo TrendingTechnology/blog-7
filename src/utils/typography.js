@@ -2,7 +2,7 @@ import Typography from 'typography';
 
 const theme = {
   baseFontSize: '18px',
-  baseLineHeight: 1.4,
+  baseLineHeight: 1.35,
   googleFonts: [
     {
       name: 'Roboto Slab',

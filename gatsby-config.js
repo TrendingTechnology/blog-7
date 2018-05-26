@@ -3,9 +3,11 @@ module.exports = {
     title: 'Василий Кузенков',
     author: 'Vassiliy Kuzenkov',
     description: 'My little blog for easy reading.',
+    copyright: '© All rights reserved.',
     siteUrl: 'https://blog.bondiano.xyz',
     vkLink: 'https://vk.com/bondian0',
-    tgLink: 'https://telegram.me/bondian0'
+    tgLink: 'https://telegram.me/bondian0',
+    disqusShortname: 'bondiano'
   },
   pathPrefix: '/',
   plugins: [
