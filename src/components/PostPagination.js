@@ -66,7 +66,7 @@ const PostPagination = ({ previous, next }) => (
   </PaginationWrapper>
 );
 
-/* eslint-disable */
+/* eslint-disable react/require-default-props */
 PostPagination.propTypes = {
   previous: PropTypes.shape({
     frontmatter: PropTypes.shape({
@@ -85,6 +85,6 @@ PostPagination.propTypes = {
     }).isRequired,
   }),
 };
-/* eslint-enable */
+/* eslint-enable react/require-default-props */
 
 export default PostPagination;
