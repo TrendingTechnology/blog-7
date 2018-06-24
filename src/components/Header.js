@@ -6,13 +6,13 @@ import Link from 'gatsby-link';
 import SocialNetworksList from './SocialNetworksList';
 
 // Utilites
-import { rhythm, scale } from '../utils/typography';
+import { scale } from '../utils/typography';
 
 const SiteHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 ${rhythm(0.3)} ${rhythm(0.5)} ${rhythm(0.3)};
+  margin: 0 4px 8px 4px;
 
   @media screen and (max-width: 450px) {
     flex-direction: column;

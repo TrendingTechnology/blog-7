@@ -11,8 +11,8 @@ const myAge = getAge('11.04.1997');
 const BioContent = styled.div`
     display: flex;
     flex-direction: column;
-    margin-bottom: ${rhythm(0.5)};
-    padding: ${rhythm(0.3)};
+    margin-bottom: 8px;
+    padding: 5px;
     background-color: ${surface};
     border-top: 1px solid ${surfaceVariant};
     border-bottom: 1px solid ${surfaceVariant};
