@@ -1,0 +1,2 @@
+webpackJsonp([0xed0c3461874e],{299:function(e,t){e.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/articles/code-problems-solve-approach/"},frontmatter:{title:"О подходе к решению задач"}}}]}},pathContext:{tag:"Программирование"}}}});
+//# sourceMappingURL=path---tags-программирование-f24c32783fc1e4b8c21d.js.map
