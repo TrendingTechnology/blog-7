@@ -24,11 +24,11 @@ const BlogPostTemplate = (props) => {
           <PostDate date={date} />
           {tags && tags.map(tag => (
             <PostTag key={tag} tag={tag} />
-            ))}
+          ))}
         </PostInfoBox>
         <PostText dangerouslySetInnerHTML={{ __html: post.html }} />
       </Box>
-      { (previous || next) && <PostPagination previous={previous} next={next} /> }
+      {(previous || next) && <PostPagination previous={previous} next={next} />}
       <Disqus title={title} siteUrl={siteUrl} slug={slug} shortname={disqusShortname} />
     </Fragment>
   );

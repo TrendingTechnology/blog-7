@@ -8,20 +8,18 @@ import Link from 'gatsby-link';
 
 // Utilites
 import { rhythm } from '../utils/typography';
-import { secondary, primary, primaryVariant } from '../utils/colors';
 
 const TagContainer = styled.small`
   margin-left: ${rhythm(0.2)};
-  background-color: ${secondary};
   padding: ${rhythm(0.2)};
 `;
 
 const TagLink = styled(Link)`
   text-decoration: none;
-  color: ${primary};
+  color: black;
 
   &:hover {
-    color: ${primaryVariant};
+    text-decoration: underline;
   }
 `;
 

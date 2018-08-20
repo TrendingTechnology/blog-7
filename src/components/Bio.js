@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 // Utilites
 import { getAge } from '../utils/helpers';
-import { surface, surfaceVariant } from '../utils/colors';
 import { rhythm } from '../utils/typography';
 
 const myAge = getAge('11.04.1997');
@@ -13,9 +12,6 @@ const BioContent = styled.div`
     flex-direction: column;
     margin-bottom: 8px;
     padding: 5px;
-    background-color: ${surface};
-    border-top: 1px solid ${surfaceVariant};
-    border-bottom: 1px solid ${surfaceVariant};
 `;
 
 const Text = styled.p`

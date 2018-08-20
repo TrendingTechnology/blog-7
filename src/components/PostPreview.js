@@ -10,7 +10,6 @@ import { Box, PostInfoBox } from './kit';
 
 // Utilites
 import { scale } from '../utils/typography';
-import { primary, primaryVariant } from '../utils/colors';
 
 const PostTitle = styled.h3`
   ${scale(0.5)}
@@ -18,10 +17,11 @@ const PostTitle = styled.h3`
 `;
 
 const PostTitleLink = styled(Link)`
-  color: ${primaryVariant};
+  text-decoration: none;
+  color: black;
 
   &:hover {
-    color: ${primary};
+    text-decoration: underline;
   }
 `;
 
@@ -36,23 +36,23 @@ const PostPreview = ({
   tags,
   date,
 }) => (
-  <Box>
-    <PostTitle>
-      <PostTitleLink to={slug}>
-        {title}
-      </PostTitleLink>
-    </PostTitle>
+    <Box>
+      <PostTitle>
+        <PostTitleLink to={slug}>
+          {title}
+        </PostTitleLink>
+      </PostTitle>
 
-    <PostInfoBox>
-      <PostDate date={date} />
-      {tags && tags.map(tag => (
-        <PostTag key={tag} tag={tag} />
-      ))}
-    </PostInfoBox>
+      <PostInfoBox>
+        <PostDate date={date} />
+        {tags && tags.map(tag => (
+          <PostTag key={tag} tag={tag} />
+        ))}
+      </PostInfoBox>
 
-    <PreviewText dangerouslySetInnerHTML={{ __html: excerpt }} />
-  </Box>
-);
+      <PreviewText dangerouslySetInnerHTML={{ __html: excerpt }} />
+    </Box>
+  );
 
 PostPreview.propTypes = {
   slug: PropTypes.string.isRequired,

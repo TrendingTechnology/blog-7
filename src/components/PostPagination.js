@@ -5,9 +5,6 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-// Utilites
-import { primary, primaryVariant } from '../utils/colors';
-
 const PaginationWrapper = styled.ul`
     display: flex;
     flex-wrap: wrap;
@@ -22,14 +19,9 @@ const PaginationWrapper = styled.ul`
 const PaginationLink = styled(Link)`
   margin-bottom: 0;
   text-decoration: none;
-  color: ${primary};
-  border-color: ${primary};
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
 
   &:hover {
-    color: ${primaryVariant};
-    border-color: ${primaryVariant};
+    text-decoration: underline;
   }
 `;
 
