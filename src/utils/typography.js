@@ -1,4 +1,4 @@
-import Typography from 'typography';
+import Typography from 'typography'
 
 const theme = {
   baseFontSize: '18px',
@@ -6,30 +6,24 @@ const theme = {
   googleFonts: [
     {
       name: 'Roboto Slab',
-      styles: [
-        '400',
-        '700',
-      ],
+      styles: ['400', '700'],
       subset: ['cyrillic'],
     },
     {
       name: 'Fira Sans Condensed',
-      styles: [
-        '400',
-        '700',
-      ],
+      styles: ['400', '700'],
       subset: ['cyrillic'],
     },
   ],
   headerFontFamily: ['Roboto Slab', 'sans-serif'],
   bodyFontFamily: ['Fira Sans Condensed', 'serif'],
-};
+}
 
-const typography = new Typography(theme);
+const typography = new Typography(theme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
-  typography.injectStyles();
+  typography.injectStyles()
 }
 
-export default typography;
+export default typography

@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 
 // Components
-import Bio from '../components/Bio';
-import PostPreview from '../components/PostPreview';
+import Bio from '../components/Bio'
+import PostPreview from '../components/PostPreview'
 
 const PostPreviewList = ({ posts }) =>
   posts.map(({ node }) => (
@@ -16,19 +16,19 @@ const PostPreviewList = ({ posts }) =>
       tags={node.frontmatter.tags}
       title={node.frontmatter.title}
     />
-  ));
+  ))
 
-const BlogIndex = (props) => {
-  const siteTitle = props.data.site.siteMetadata.title;
-  const posts = props.data.allMarkdownRemark.edges;
+const BlogIndex = props => {
+  const siteTitle = props.data.site.siteMetadata.title
+  const posts = props.data.allMarkdownRemark.edges
   return (
     <Fragment>
       <Helmet title={siteTitle} />
       <Bio />
       <PostPreviewList posts={posts} />
     </Fragment>
-  );
-};
+  )
+}
 
 BlogIndex.propTypes = {
   data: PropTypes.shape({
@@ -41,9 +41,9 @@ BlogIndex.propTypes = {
       edges: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
     }).isRequired,
   }).isRequired,
-};
+}
 
-export default BlogIndex;
+export default BlogIndex
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -68,4 +68,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

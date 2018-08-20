@@ -1,19 +1,23 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 
 // Components
-import Helmet from 'react-helmet';
-import PostPagination from '../components/PostPagination';
-import PostDate from '../components/PostDate';
-import PostTag from '../components/PostTag';
-import Disqus from '../components/Disqus';
-import { Box, PostText, PostTitle, PostInfoBox } from '../components/kit';
+import Helmet from 'react-helmet'
+import PostPagination from '../components/PostPagination'
+import PostDate from '../components/PostDate'
+import PostTag from '../components/PostTag'
+import Disqus from '../components/Disqus'
+import { Box, PostText, PostTitle, PostInfoBox } from '../components/kit'
 
-const BlogPostTemplate = (props) => {
-  const post = props.data.markdownRemark;
-  const { title: siteTitle, siteUrl, disqusShortname } = props.data.site.siteMetadata;
-  const { title, tags, date } = post.frontmatter;
-  const { previous, next, slug } = props.pathContext;
+const BlogPostTemplate = props => {
+  const post = props.data.markdownRemark
+  const {
+    title: siteTitle,
+    siteUrl,
+    disqusShortname,
+  } = props.data.site.siteMetadata
+  const { title, tags, date } = post.frontmatter
+  const { previous, next, slug } = props.pathContext
 
   return (
     <Fragment>
@@ -22,17 +26,20 @@ const BlogPostTemplate = (props) => {
         <PostTitle>{title}</PostTitle>
         <PostInfoBox align="flex-end">
           <PostDate date={date} />
-          {tags && tags.map(tag => (
-            <PostTag key={tag} tag={tag} />
-          ))}
+          {tags && tags.map(tag => <PostTag key={tag} tag={tag} />)}
         </PostInfoBox>
         <PostText dangerouslySetInnerHTML={{ __html: post.html }} />
       </Box>
       {(previous || next) && <PostPagination previous={previous} next={next} />}
-      <Disqus title={title} siteUrl={siteUrl} slug={slug} shortname={disqusShortname} />
+      <Disqus
+        title={title}
+        siteUrl={siteUrl}
+        slug={slug}
+        shortname={disqusShortname}
+      />
     </Fragment>
-  );
-};
+  )
+}
 
 BlogPostTemplate.propTypes = {
   pathContext: PropTypes.shape({
@@ -47,9 +54,9 @@ BlogPostTemplate.propTypes = {
       }).isRequired,
     }).isRequired,
   }).isRequired,
-};
+}
 
-export default BlogPostTemplate;
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -71,4 +78,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

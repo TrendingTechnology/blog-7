@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Box = styled.div`
   padding: 8px;
@@ -12,6 +12,6 @@ const Box = styled.div`
     box-shadow: none;
     padding: 2px;
   }
-`;
+`
 
-export default Box;
+export default Box

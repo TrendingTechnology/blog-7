@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 // Utilities
-import KebabCase from 'kebab-case';
+import KebabCase from 'kebab-case'
 
 // Components
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 
 const TagsPage = ({
   data: {
@@ -31,15 +31,17 @@ const TagsPage = ({
       </ul>
     </div>
   </div>
-);
+)
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      group: PropTypes.arrayOf(PropTypes.shape({
-        fieldValue: PropTypes.string.isRequired,
-        totalCount: PropTypes.number.isRequired,
-      }).isRequired),
+      group: PropTypes.arrayOf(
+        PropTypes.shape({
+          fieldValue: PropTypes.string.isRequired,
+          totalCount: PropTypes.number.isRequired,
+        }).isRequired
+      ),
     }).isRequired,
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
@@ -47,9 +49,9 @@ TagsPage.propTypes = {
       }).isRequired,
     }).isRequired,
   }).isRequired,
-};
+}
 
-export default TagsPage;
+export default TagsPage
 
 export const pageQuery = graphql`
   query TagsQuery {
@@ -58,13 +60,11 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      limit: 2000
-    ) {
+    allMarkdownRemark(limit: 2000) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
       }
     }
   }
-`;
+`

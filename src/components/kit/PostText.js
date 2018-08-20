@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const PostText = styled.article`
   display: flex;
@@ -14,6 +14,6 @@ const PostText = styled.article`
   > :last-child {
     margin-bottom: 0;
   }
-`;
+`
 
-export default PostText;
+export default PostText
