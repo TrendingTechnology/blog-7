@@ -1,2 +1,2 @@
-webpackJsonp([55702396619907],{301:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Василий Кузенков"}},allMarkdownRemark:{group:[{fieldValue:"Hello World",totalCount:1},{fieldValue:"Будни",totalCount:1},{fieldValue:"Программирование",totalCount:1},{fieldValue:"Рассуждения",totalCount:1}]}},pathContext:{}}}});
+webpackJsonp([55702396619907],{300:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Василий Кузенков"}},allMarkdownRemark:{group:[{fieldValue:"Hello World",totalCount:1},{fieldValue:"Будни",totalCount:1},{fieldValue:"Программирование",totalCount:1},{fieldValue:"Рассуждения",totalCount:1}]}},pathContext:{}}}});
 //# sourceMappingURL=path---tags-cce4422fc6c6f161366d.js.map
