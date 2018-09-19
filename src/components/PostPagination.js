@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 // Components
-import {Link} from 'gatsby'
-import styled from 'styled-components'
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 const PaginationWrapper = styled.ul`
   display: flex;
@@ -14,7 +14,7 @@ const PaginationWrapper = styled.ul`
   font-size: 80%;
   padding: 0;
   margin: 0;
-`
+`;
 
 const PaginationLink = styled(Link)`
   margin-bottom: 0;
@@ -23,18 +23,18 @@ const PaginationLink = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
-`
+`;
 
 const Arrow = styled.p`
   margin-bottom: 0;
-`
+`;
 
 const Pagination = styled.li`
   display: flex;
   flex-direction: row;
   align-content: center;
   margin-bottom: 0;
-`
+`;
 
 const PostPagination = ({ previous, next }) => (
   <PaginationWrapper>
@@ -56,7 +56,7 @@ const PostPagination = ({ previous, next }) => (
       </Pagination>
     )}
   </PaginationWrapper>
-)
+);
 
 /* eslint-disable react/require-default-props */
 PostPagination.propTypes = {
@@ -76,7 +76,7 @@ PostPagination.propTypes = {
       slug: PropTypes.string.isRequired,
     }).isRequired,
   }),
-}
+};
 /* eslint-enable react/require-default-props */
 
-export default PostPagination
+export default PostPagination;

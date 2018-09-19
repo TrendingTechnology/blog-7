@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import PropTypes from 'prop-types'
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const PostInfoBox = styled.div`
   display: flex;
@@ -7,14 +7,14 @@ const PostInfoBox = styled.div`
   align-items: center;
   margin: 5px 0;
   justify-content: ${props => props.align};
-`
+`;
 
 PostInfoBox.defaultProps = {
   align: 'flex-start',
-}
+};
 
 PostInfoBox.propTypes = {
   align: PropTypes.string,
-}
+};
 
-export default PostInfoBox
+export default PostInfoBox;

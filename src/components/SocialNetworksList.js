@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import faVk from '@fortawesome/fontawesome-free-brands/faVk'
-import faTelegramPlane from '@fortawesome/fontawesome-free-brands/faTelegramPlane'
-import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
-import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope'
-import faRss from '@fortawesome/fontawesome-free-solid/faRss'
+import faVk from '@fortawesome/fontawesome-free-brands/faVk';
+import faTelegramPlane from '@fortawesome/fontawesome-free-brands/faTelegramPlane';
+import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
+import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
+import faRss from '@fortawesome/fontawesome-free-solid/faRss';
 
 const socialNetworks = [
   {
@@ -39,12 +39,12 @@ const socialNetworks = [
     link: './rss.xml',
     icon: faRss,
   },
-]
+];
 
 const SocialNetworksWrapper = styled.div`
   display: flex;
   flex-direction: row;
-`
+`;
 
 const SocialNetworkLink = styled.a`
   cursor: pointer;
@@ -58,7 +58,7 @@ const SocialNetworkLink = styled.a`
   &:last-child {
     padding-right: 0;
   }
-`
+`;
 
 const SocialNetworksList = () => (
   <SocialNetworksWrapper>
@@ -74,6 +74,6 @@ const SocialNetworksList = () => (
       </SocialNetworkLink>
     ))}
   </SocialNetworksWrapper>
-)
+);
 
-export default SocialNetworksList
+export default SocialNetworksList;

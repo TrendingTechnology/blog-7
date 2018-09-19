@@ -1,36 +1,35 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
 
 // Components
-import Bio from '../components/Bio'
-import PostPreview from '../components/PostPreview'
-import Layout from "../components/layout"
+import Bio from '../components/Bio';
+import PostPreview from '../components/PostPreview';
+import Layout from '../components/layout';
 
-const PostPreviewList = ({ posts }) =>
-  posts.map(({ node }) => (
-    <PostPreview
-      date={node.frontmatter.date}
-      excerpt={node.excerpt}
-      key={node.fields.slug}
-      slug={node.fields.slug}
-      tags={node.frontmatter.tags}
-      title={node.frontmatter.title}
-    />
-  ))
+const PostPreviewList = ({ posts }) => posts.map(({ node }) => (
+  <PostPreview
+    date={node.frontmatter.date}
+    excerpt={node.excerpt}
+    key={node.fields.slug}
+    slug={node.fields.slug}
+    tags={node.frontmatter.tags}
+    title={node.frontmatter.title}
+  />
+));
 
-const BlogIndex = props => {
-  const siteTitle = props.data.site.siteMetadata.title
-  const posts = props.data.allMarkdownRemark.edges
+const BlogIndex = (props) => {
+  const siteTitle = props.data.site.siteMetadata.title;
+  const posts = props.data.allMarkdownRemark.edges;
   return (
     <Layout>
       <Helmet title={siteTitle} />
       <Bio />
       <PostPreviewList posts={posts} />
     </Layout>
-  )
-}
+  );
+};
 
 BlogIndex.propTypes = {
   data: PropTypes.shape({
@@ -43,9 +42,9 @@ BlogIndex.propTypes = {
       edges: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
     }).isRequired,
   }).isRequired,
-}
+};
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -70,4 +69,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

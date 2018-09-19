@@ -1,28 +1,28 @@
-import React, { Fragment } from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from "gatsby"
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
 // Components
-import Helmet from 'react-helmet'
-import PostText from './PostText'
-import PostTitle from './PostTitle'
-import PostInfoBox from './PostInfoBox'
-import Box from './Box'
-import PostPagination from './PostPagination'
-import PostDate from './PostDate'
-import PostTag from './PostTag'
-import Disqus from './Disqus'
-import Layout from './layout'
+import Helmet from 'react-helmet';
+import PostText from './PostText';
+import PostTitle from './PostTitle';
+import PostInfoBox from './PostInfoBox';
+import Box from './Box';
+import PostPagination from './PostPagination';
+import PostDate from './PostDate';
+import PostTag from './PostTag';
+import Disqus from './Disqus';
+import Layout from './layout';
 
-const BlogPostTemplate = props => {
-  const post = props.data.markdownRemark
+const BlogPostTemplate = (props) => {
+  const post = props.data.markdownRemark;
   const {
     title: siteTitle,
     siteUrl,
     disqusShortname,
-  } = props.data.site.siteMetadata
-  const { title, tags, date } = post.frontmatter
-  const { previous, next, slug } = props.pageContext
+  } = props.data.site.siteMetadata;
+  const { title, tags, date } = post.frontmatter;
+  const { previous, next, slug } = props.pageContext;
 
   return (
     <Layout>
@@ -43,8 +43,8 @@ const BlogPostTemplate = props => {
         shortname={disqusShortname}
       />
     </Layout>
-  )
-}
+  );
+};
 
 BlogPostTemplate.propTypes = {
   pageContext: PropTypes.shape({
@@ -59,9 +59,9 @@ BlogPostTemplate.propTypes = {
       }).isRequired,
     }).isRequired,
   }).isRequired,
-}
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -83,4 +83,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,14 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
 // Utilities
-import KebabCase from 'kebab-case'
+import KebabCase from 'kebab-case';
 
 // Components
-import Helmet from 'react-helmet'
-import { Link } from 'gatsby'
-import Layout from "../components/layout"
+import Helmet from 'react-helmet';
+import { Link } from 'gatsby';
+import Layout from '../components/layout';
 
 const TagsPage = ({
   data: {
@@ -18,22 +18,26 @@ const TagsPage = ({
     },
   },
 }) => (
-    <Layout>
-      <Helmet title={title} />
-      <div>
-        <h2>Все тэги</h2>
-        <ul>
-          {group.map(tag => (
-            <li key={tag.fieldValue}>
-              <Link to={`/tags/${KebabCase(tag.fieldValue)}/`}>
-                {tag.fieldValue} ({tag.totalCount})
+  <Layout>
+    <Helmet title={title} />
+    <div>
+      <h2>Все тэги</h2>
+      <ul>
+        {group.map(tag => (
+          <li key={tag.fieldValue}>
+            <Link to={`/tags/${KebabCase(tag.fieldValue)}/`}>
+              {tag.fieldValue}
+              {' '}
+(
+              {tag.totalCount}
+)
             </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </Layout>
-  )
+          </li>
+        ))}
+      </ul>
+    </div>
+  </Layout>
+);
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
@@ -42,7 +46,7 @@ TagsPage.propTypes = {
         PropTypes.shape({
           fieldValue: PropTypes.string.isRequired,
           totalCount: PropTypes.number.isRequired,
-        }).isRequired
+        }).isRequired,
       ),
     }).isRequired,
     site: PropTypes.shape({
@@ -51,9 +55,9 @@ TagsPage.propTypes = {
       }).isRequired,
     }).isRequired,
   }).isRequired,
-}
+};
 
-export default TagsPage
+export default TagsPage;
 
 export const pageQuery = graphql`
   query TagsQuery {
@@ -69,4 +73,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
