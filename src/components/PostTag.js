@@ -2,10 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import kebabCase from 'kebab-case'
+import { Link } from 'gatsby'
 
 // Components
-import Link from 'gatsby-link'
-
 // Utilites
 import { rhythm } from '../utils/typography'
 
@@ -16,7 +15,7 @@ const TagContainer = styled.small`
 
 const TagLink = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 
   &:hover {
     text-decoration: underline;

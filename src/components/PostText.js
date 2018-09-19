@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const PostText = styled.article`
+export default styled.article`
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
@@ -15,5 +15,3 @@ const PostText = styled.article`
     margin-bottom: 0;
   }
 `
-
-export default PostText

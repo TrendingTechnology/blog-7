@@ -1,10 +1,12 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { graphql } from "gatsby"
 
 // Components
 import Bio from '../components/Bio'
 import PostPreview from '../components/PostPreview'
+import Layout from "../components/layout"
 
 const PostPreviewList = ({ posts }) =>
   posts.map(({ node }) => (
@@ -22,11 +24,11 @@ const BlogIndex = props => {
   const siteTitle = props.data.site.siteMetadata.title
   const posts = props.data.allMarkdownRemark.edges
   return (
-    <Fragment>
+    <Layout>
       <Helmet title={siteTitle} />
       <Bio />
       <PostPreviewList posts={posts} />
-    </Fragment>
+    </Layout>
   )
 }
 

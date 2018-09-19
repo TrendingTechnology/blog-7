@@ -1,13 +1,18 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from "gatsby"
 
 // Components
 import Helmet from 'react-helmet'
-import PostPagination from '../components/PostPagination'
-import PostDate from '../components/PostDate'
-import PostTag from '../components/PostTag'
-import Disqus from '../components/Disqus'
-import { Box, PostText, PostTitle, PostInfoBox } from '../components/kit'
+import PostText from './PostText'
+import PostTitle from './PostTitle'
+import PostInfoBox from './PostInfoBox'
+import Box from './Box'
+import PostPagination from './PostPagination'
+import PostDate from './PostDate'
+import PostTag from './PostTag'
+import Disqus from './Disqus'
+import Layout from './layout'
 
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark
@@ -17,10 +22,10 @@ const BlogPostTemplate = props => {
     disqusShortname,
   } = props.data.site.siteMetadata
   const { title, tags, date } = post.frontmatter
-  const { previous, next, slug } = props.pathContext
+  const { previous, next, slug } = props.pageContext
 
   return (
-    <Fragment>
+    <Layout>
       <Box>
         <Helmet title={`${title} | ${siteTitle}`} />
         <PostTitle>{title}</PostTitle>
@@ -37,12 +42,12 @@ const BlogPostTemplate = props => {
         slug={slug}
         shortname={disqusShortname}
       />
-    </Fragment>
+    </Layout>
   )
 }
 
 BlogPostTemplate.propTypes = {
-  pathContext: PropTypes.shape({
+  pageContext: PropTypes.shape({
     previous: PropTypes.isRequired,
     next: PropTypes.isRequired,
   }).isRequired,

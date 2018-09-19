@@ -1,16 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql, Link } from "gatsby"
 
 // Components
-import Link from 'gatsby-link'
+import Layout from './layout'
 
-const Tags = ({ pathContext, data }) => {
-  const { tag } = pathContext
+
+const Tags = ({ pageContext, data }) => {
+  const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `Найденно постов с тэгом "${tag}": ${totalCount}`
 
   return (
-    <div>
+    <Layout>
       <h2>{tagHeader}</h2>
       <ul>
         {edges.map(({ node }) => {
@@ -24,12 +26,12 @@ const Tags = ({ pathContext, data }) => {
         })}
       </ul>
       <Link to="/tags">Все тэги</Link>
-    </div>
+    </Layout>
   )
 }
 
 Tags.propTypes = {
-  pathContext: PropTypes.shape({
+  pageContext: PropTypes.shape({
     tag: PropTypes.string.isRequired,
   }).isRequired,
   data: PropTypes.shape({

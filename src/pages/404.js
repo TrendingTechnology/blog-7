@@ -1,8 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
+import Layout from "../components/layout"
 
 const NotFoundPage = () => (
-  <div>
+  <Layout>
     <h1>Страница не найдена</h1>
     <p>
       К сожалению, страница не найдена. Если она точно должа быть, сообщите на
@@ -12,7 +13,7 @@ const NotFoundPage = () => (
       </a>
     </p>
     <Link to="/">Вернуться в блог</Link>
-  </div>
+  </Layout>
 )
 
 export default NotFoundPage

@@ -45,7 +45,7 @@ module.exports = {
             options: {
               classPrefix: "language-",
               inlineCodeMarker: null,
-              aliases: {sh: "bash"},
+              aliases: { sh: "bash" },
             },
           },
           'gatsby-remark-copy-linked-files',
@@ -58,7 +58,6 @@ module.exports = {
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-react-next`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,

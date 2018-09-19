@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import faVk from '@fortawesome/fontawesome-free-brands/faVk'
 import faTelegramPlane from '@fortawesome/fontawesome-free-brands/faTelegramPlane'

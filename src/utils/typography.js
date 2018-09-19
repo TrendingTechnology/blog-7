@@ -25,5 +25,6 @@ const typography = new Typography(theme)
 if (process.env.NODE_ENV !== 'production') {
   typography.injectStyles()
 }
+const { rhythm, scale } = typography;
 
-export default typography
+export { rhythm, scale, typography as default };

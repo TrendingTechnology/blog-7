@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 // Components
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 import SocialNetworksList from './SocialNetworksList'
 
 // Utilites
@@ -24,7 +24,8 @@ const SiteTitle = styled.h1`
 `
 
 const TitleLink = styled(Link)`
-  ${scale(1.4)} box-shadow: none;
+  ${scale(1.5)}
+  box-shadow: none;
   text-decoration: none;
   color: inherit;
 `

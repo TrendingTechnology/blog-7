@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 // Components
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import PostTag from './PostTag'
 import PostDate from './PostDate'
-import { Box, PostInfoBox } from './kit'
+import Box from './Box'
+import PostInfoBox from './PostInfoBox'
 
 // Utilites
 import { scale } from '../utils/typography'
@@ -17,7 +18,7 @@ const PostTitle = styled.h3`
 
 const PostTitleLink = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, .8);
 
   &:hover {
     text-decoration: underline;

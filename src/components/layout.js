@@ -20,7 +20,7 @@ const MainWrapper = styled.main`
 const Template = ({ children }) => (
   <MainWrapper>
     <Header />
-    {children()}
+    {children}
   </MainWrapper>
 )
 
