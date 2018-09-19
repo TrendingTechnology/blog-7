@@ -25,7 +25,7 @@ const Template = ({ children }) => (
 );
 
 Template.propTypes = {
-  children: PropTypes.func.isRequired,
+  children: PropTypes.any.isRequired,
 };
 
 export default Template;

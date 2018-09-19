@@ -26,7 +26,7 @@ const BlogPostTemplate = (props) => {
 
   return (
     <Layout>
-      <Box>
+      <Box mt="30px">
         <Helmet title={`${title} | ${siteTitle}`} />
         <PostTitle>{title}</PostTitle>
         <PostInfoBox align="flex-end">
