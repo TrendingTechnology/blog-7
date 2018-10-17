@@ -19,9 +19,9 @@ const PostPreviewList = ({ posts }) => posts.map(({ node }) => (
   />
 ));
 
-const BlogIndex = (props) => {
-  const siteTitle = props.data.site.siteMetadata.title;
-  const posts = props.data.allMarkdownRemark.edges;
+const BlogIndex = ({ data }) => {
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <Helmet title={siteTitle} />

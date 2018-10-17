@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 // Utilities
 import KebabCase from 'kebab-case';
 
 // Components
 import Helmet from 'react-helmet';
-import { Link } from 'gatsby';
 import Layout from '../components/layout';
 
 const TagsPage = ({
@@ -28,9 +27,7 @@ const TagsPage = ({
             <Link to={`/tags/${KebabCase(tag.fieldValue)}/`}>
               {tag.fieldValue}
               {' '}
-(
-              {tag.totalCount}
-)
+                                ({tag.totalCount})
             </Link>
           </li>
         ))}

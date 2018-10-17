@@ -45,7 +45,7 @@ module.exports = {
             options: {
               classPrefix: "language-",
               inlineCodeMarker: null,
-              aliases: { sh: "bash" },
+              aliases: { sh: "bash", js: "javascript" },
             },
           },
           'gatsby-remark-copy-linked-files',

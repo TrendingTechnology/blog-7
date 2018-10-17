@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
@@ -14,15 +14,15 @@ import PostTag from './PostTag';
 import Disqus from './Disqus';
 import Layout from './layout';
 
-const BlogPostTemplate = (props) => {
-  const post = props.data.markdownRemark;
+const BlogPostTemplate = ({ data, pageContext }) => {
+  const post = data.markdownRemark;
   const {
     title: siteTitle,
     siteUrl,
     disqusShortname,
-  } = props.data.site.siteMetadata;
+  } = data.site.siteMetadata;
   const { title, tags, date } = post.frontmatter;
-  const { previous, next, slug } = props.pageContext;
+  const { previous, next, slug } = pageContext;
 
   return (
     <Layout>
