@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export default styled.article`
   display: flex;
@@ -14,4 +14,4 @@ export default styled.article`
   > :last-child {
     margin-bottom: 0;
   }
-`;
+`

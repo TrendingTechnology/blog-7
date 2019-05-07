@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export default styled.div`
   padding: 8px;
@@ -13,4 +13,4 @@ export default styled.div`
     box-shadow: none;
     padding: 2px;
   }
-`;
+`

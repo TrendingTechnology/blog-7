@@ -1,57 +1,86 @@
 module.exports = {
-  "extends": [
-    "airbnb"
-  ],
-  "env": {
-    "browser": true,
-    "es6": true,
+  extends: ['airbnb', 'prettier'],
+  env: {
+    browser: true,
+    es6: true,
   },
-  "plugins": [
-    "react",
-  ],
-  "globals": {
-    "graphql": false,
+  plugins: ['prettier', 'react'],
+  globals: {
+    graphql: false,
   },
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true,
+  parserOptions: {
+    sourceType: 'module',
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      jsx: true,
     },
   },
-  "rules": {
-    "import/no-extraneous-dependencies": 0,
-    "react/jsx-filename-extension": 0,
-    "react/jsx-one-expression-per-line": 0,
-    "jsx-a11y/anchor-is-valid": ["error", {
-      "components": ["Link"],
-      "specialLink": ["hrefLeft", "hrefRight", "to"],
-      "aspects": ["noHref", "invalidHref", "preferButton"]
-    }],
-    'indent': ['error', 2,
+  rules: {
+    'prettier/prettier': 'error',
+    'default-case': 0,
+    eqeqeq: ['error', 'smart'],
+    'no-unused-expressions': 0,
+    'consistent-return': 0,
+    'no-dupe-keys': 'error',
+    'class-methods-use-this': 0,
+    camelcase: 0,
+    'global-require': 0,
+    'no-console': 0,
+    'no-plusplus': 0,
+    'no-nested-ternary': 0,
+    'import/no-extraneous-dependencies': 0,
+    'react/jsx-filename-extension': 0,
+    'react/jsx-one-expression-per-line': 0,
+    'react/jsx-closing-bracket-location': 0,
+    'jsx-a11y/anchor-is-valid': [
+      'error',
       {
-        'SwitchCase': 1,
-        'VariableDeclarator': 1,
-        'outerIIFEBody': 1,
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight', 'to'],
+        aspects: ['noHref', 'invalidHref', 'preferButton'],
+      },
+    ],
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        VariableDeclarator: 1,
+        outerIIFEBody: 1,
         // MemberExpression: null,
-        'FunctionDeclaration': {
-          'parameters': 1,
-          'body': 1
+        FunctionDeclaration: {
+          parameters: 1,
+          body: 1,
         },
-        'FunctionExpression': {
-          'parameters': 1,
-          'body': 1
+        FunctionExpression: {
+          parameters: 1,
+          body: 1,
         },
-        'CallExpression': {
-          'arguments': 1
+        CallExpression: {
+          arguments: 1,
         },
-        'ArrayExpression': 1,
-        'ObjectExpression': 1,
-        'ImportDeclaration': 1,
-        'flatTernaryExpressions': false,
+        ArrayExpression: 1,
+        ObjectExpression: 1,
+        ImportDeclaration: 1,
+        flatTernaryExpressions: false,
         // list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
-        'ignoredNodes': ['JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild'],
-        'ignoreComments': false
-      }]
-  }
+        ignoredNodes: [
+          'JSXElement',
+          'JSXElement > *',
+          'JSXAttribute',
+          'JSXIdentifier',
+          'JSXNamespacedName',
+          'JSXMemberExpression',
+          'JSXSpreadAttribute',
+          'JSXExpressionContainer',
+          'JSXOpeningElement',
+          'JSXClosingElement',
+          'JSXText',
+          'JSXEmptyExpression',
+          'JSXSpreadChild',
+        ],
+        ignoreComments: false,
+      },
+    ],
+  },
 }

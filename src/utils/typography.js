@@ -1,4 +1,4 @@
-import Typography from 'typography';
+import Typography from 'typography'
 
 const theme = {
   baseFontSize: '18px',
@@ -17,14 +17,14 @@ const theme = {
   ],
   headerFontFamily: ['Roboto Slab', 'sans-serif'],
   bodyFontFamily: ['Fira Sans Condensed', 'serif'],
-};
+}
 
-const typography = new Typography(theme);
+const typography = new Typography(theme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
-  typography.injectStyles();
+  typography.injectStyles()
 }
-const { rhythm, scale } = typography;
+const { rhythm, scale } = typography
 
-export { rhythm, scale, typography as default };
+export { rhythm, scale, typography as default }

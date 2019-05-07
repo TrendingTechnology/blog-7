@@ -1,28 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 
 // Components
-import Helmet from 'react-helmet';
-import PostText from './PostText';
-import PostTitle from './PostTitle';
-import PostInfoBox from './PostInfoBox';
-import Box from './Box';
-import PostPagination from './PostPagination';
-import PostDate from './PostDate';
-import PostTag from './PostTag';
-import Disqus from './Disqus';
-import Layout from './layout';
+import Helmet from 'react-helmet'
+import PostText from './PostText'
+import PostTitle from './PostTitle'
+import PostInfoBox from './PostInfoBox'
+import Box from './Box'
+import PostPagination from './PostPagination'
+import PostDate from './PostDate'
+import PostTag from './PostTag'
+import Disqus from './Disqus'
+import Layout from './layout'
 
 const BlogPostTemplate = ({ data, pageContext }) => {
-  const post = data.markdownRemark;
-  const {
-    title: siteTitle,
-    siteUrl,
-    disqusShortname,
-  } = data.site.siteMetadata;
-  const { title, tags, date } = post.frontmatter;
-  const { previous, next, slug } = pageContext;
+  const post = data.markdownRemark
+  const { title: siteTitle, siteUrl, disqusShortname } = data.site.siteMetadata
+  const { title, tags, date } = post.frontmatter
+  const { previous, next, slug } = pageContext
 
   return (
     <Layout>
@@ -43,8 +39,8 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         shortname={disqusShortname}
       />
     </Layout>
-  );
-};
+  )
+}
 
 BlogPostTemplate.propTypes = {
   pageContext: PropTypes.shape({
@@ -59,9 +55,9 @@ BlogPostTemplate.propTypes = {
       }).isRequired,
     }).isRequired,
   }).isRequired,
-};
+}
 
-export default BlogPostTemplate;
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -83,4 +79,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
