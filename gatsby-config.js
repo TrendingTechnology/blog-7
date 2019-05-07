@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'Василий Кузенков',
+    title: 'Васин Блог',
     author: 'Vassiliy Kuzenkov',
     description: 'My little blog for easy reading.',
     copyright: '© All rights reserved.',
     siteUrl: 'https://blog.bondiano.xyz',
     vkLink: 'https://vk.com/bondian0',
     tgLink: 'https://telegram.me/bondian0',
-    disqusShortname: 'bondiano'
+    disqusShortname: 'bondiano',
   },
   pathPrefix: '/',
   plugins: [
@@ -32,7 +32,7 @@ module.exports = {
             resolve: 'gatsby-remark-emoji', // <-- this adds emoji
             options: {
               emojiConversion: 'shortnameToUnicode',
-            }
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -43,9 +43,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               inlineCodeMarker: null,
-              aliases: { sh: "bash", js: "javascript" },
+              aliases: { sh: 'bash', js: 'javascript' },
             },
           },
           'gatsby-remark-copy-linked-files',
@@ -62,13 +62,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Bondiano Blog",
-        short_name: "Blog",
-        start_url: "/",
-        background_color: "#ffffff",
-        theme_color: "#ffffff",
-        display: "minimal-ui",
-        icon: "static/icon.png", // This path is relative to the root of the site.
+        name: 'Bondiano Blog',
+        short_name: 'Blog',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
+        display: 'minimal-ui',
+        icon: 'static/icon.png', // This path is relative to the root of the site.
       },
     },
     {
