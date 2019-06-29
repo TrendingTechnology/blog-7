@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Васин Блог]]></title><description><![CDATA[My little blog for easy reading.]]></description><link>https://blog.bondiano.xyz</link><generator>RSS for Node</generator><lastBuildDate>Tue, 07 May 2019 16:02:27 GMT</lastBuildDate><item><title><![CDATA[О подходе к решению задач]]></title><description><![CDATA[Задачи - первое, с чем сталкиваешься, когда начинаешь программировать по-настоящему. Тут как раз и понимаешь, что программирование далеко не…]]></description><link>https://blog.bondiano.xyz/code-problems-solve-approach/</link><guid isPermaLink="false">https://blog.bondiano.xyz/code-problems-solve-approach/</guid><pubDate>Sat, 30 Jun 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Задачи - первое, с чем сталкиваешься, когда начинаешь программировать по-настоящему.&lt;/strong&gt; Тут как раз и понимаешь, что программирование далеко не линейный процесс, и нередко таск в Redmine, Jira, Youtrack (&lt;em&gt;или где там у вас записаны задачи&lt;/em&gt;), кажется ужасным крестом, который вам предстоит нести ближайшие, если повезет, несколько дней.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Васин Блог]]></title><description><![CDATA[My little blog for easy reading.]]></description><link>https://blog.bondiano.xyz</link><generator>RSS for Node</generator><lastBuildDate>Sat, 29 Jun 2019 12:24:47 GMT</lastBuildDate><item><title><![CDATA[О подходе к решению задач]]></title><description><![CDATA[Задачи - первое, с чем сталкиваешься, когда начинаешь программировать по-настоящему. Тут как раз и понимаешь, что программирование далеко не…]]></description><link>https://blog.bondiano.xyz/code-problems-solve-approach/</link><guid isPermaLink="false">https://blog.bondiano.xyz/code-problems-solve-approach/</guid><pubDate>Sat, 30 Jun 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Задачи - первое, с чем сталкиваешься, когда начинаешь программировать по-настоящему.&lt;/strong&gt; Тут как раз и понимаешь, что программирование далеко не линейный процесс, и нередко таск в Redmine, Jira, Youtrack (&lt;em&gt;или где там у вас записаны задачи&lt;/em&gt;), кажется ужасным крестом, который вам предстоит нести ближайшие, если повезет, несколько дней.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;Статья навеяна недавним митапом у нас в компании, а также замечательной книгой &lt;a href=&quot;https://www.piter.com/collection/bestsellery-oreilly/product/programmirovanie-bez-durakov&quot;&gt;«Программирование без дураков»&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -45,7 +45,11 @@
 &lt;p&gt;Всем до скорого.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Хотя, вот вам на последок вам миленького котика&lt;/p&gt;
-&lt;p&gt;&lt;a
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 595px;&quot;
+    &gt;
+      &lt;a
     class=&quot;gatsby-resp-image-link&quot;
     href=&quot;/static/fdca4dc0b9368c01ad18924144a8b551/6c315/cat.jpg&quot;
     style=&quot;display: block&quot;
@@ -53,14 +57,10 @@
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 595px;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 133.359375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGk6qxqRoHMnYUVkZI//8QAGxAAAgIDAQAAAAAAAAAAAAAAAQMAAhESEzH/2gAIAQEAAQUCHlGWzVHSczGRNTZbMCMGbJGi7wVG8//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABsQAAICAwEAAAAAAAAAAAAAAAABEBECEjEh/9oACAEBAAY/AnZ6zZ51Nos6JRyP/8QAHBABAAMBAQADAAAAAAAAAAAAAQARIUExUXGR/9oACAEBAAE/ITiAb+Zh8qIZdR8qCPoVyDGs++EKQD3zkyz1P3SGzZy0Aqf/2gAMAwEAAgADAAAAEMw1A//EABcRAAMBAAAAAAAAAAAAAAAAAAABERD/2gAIAQMBAT8QIiXP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERMf/aAAgBAgEBPxDrala//8QAHRABAQADAAMBAQAAAAAAAAAAAREAIVExQWFxsf/aAAgBAQABPxDUKqoUnb4uW6QCsqBr+4B1LElmJ09itKfH1hgHXYqHD73HMpUv3LkiU+u4161vXg5jg+ar9cBACccmOy8wgAhn/9k=&apos;); background-size: cover; display: block;&quot;
-    &gt;&lt;/span&gt;
-    &lt;img
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.359375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGk6qxqRoHMnYUVkZI//8QAGxAAAgIDAQAAAAAAAAAAAAAAAQMAAhESEzH/2gAIAQEAAQUCHlGWzVHSczGRNTZbMCMGbJGi7wVG8//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABsQAAICAwEAAAAAAAAAAAAAAAABEBECEjEh/9oACAEBAAY/AnZ6zZ51Nos6JRyP/8QAHBABAAMBAQADAAAAAAAAAAAAAQARIUExUXGR/9oACAEBAAE/ITiAb+Zh8qIZdR8qCPoVyDGs++EKQD3zkyz1P3SGzZy0Aqf/2gAMAwEAAgADAAAAEMw1A//EABcRAAMBAAAAAAAAAAAAAAAAAAABERD/2gAIAQMBAT8QIiXP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERMf/aAAgBAgEBPxDrala//8QAHRABAQADAAMBAQAAAAAAAAAAAREAIVExQWFxsf/aAAgBAQABPxDUKqoUnb4uW6QCsqBr+4B1LElmJ09itKfH1hgHXYqHD73HMpUv3LkiU+u4161vXg5jg+ar9cBACccmOy8wgAhn/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
         alt=&quot;A Cat&quot;
@@ -74,5 +74,5 @@
 /static/fdca4dc0b9368c01ad18924144a8b551/6c315/cat.jpg 1280w&quot;
         sizes=&quot;(max-width: 595px) 100vw, 595px&quot;
       /&gt;
-  &lt;/span&gt;
-  &lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
