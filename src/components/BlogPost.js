@@ -46,12 +46,15 @@ BlogPostTemplate.propTypes = {
   pageContext: PropTypes.shape({
     previous: PropTypes.isRequired,
     next: PropTypes.isRequired,
+    slug: PropTypes.string.isRequired,
   }).isRequired,
   data: PropTypes.shape({
     markdownRemark: PropTypes.isRequired,
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
         title: PropTypes.string.isRequired,
+        siteUrl: PropTypes.string.isRequired,
+        disqusShortname: PropTypes.string.isRequired,
       }).isRequired,
     }).isRequired,
   }).isRequired,
